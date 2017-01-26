@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <script src="stylesheets/js/jquery.min.js"></script>
+    <script src="stylesheets/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <link rel="stylesheet" href="stylesheets/mine.css">
+    <title>Sibu's Arch setup log</title>
+</head>
+
+<body>
+    <link rel="icon" href="favicon.png">
+    <header>
+        <div class="container">
+            <h1>Arch in Thinkpad Yoga</h1>
+            <div class="panel-group">
+                <div align="center">
+                    <div>
+                        <font size="6" align="center">
+                            <b style="color:#b5e853">&lt;&lt;&lt; </b>
+                            <a data-toggle="collapse" href="#collapse1">CLICK HERE TO LIST ALL PAGES</a>
+                            <b style="color:#b5e853"> &gt;&gt;&gt;</b>
+                        </font>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <table class="list-group" align="center">
+                            <tr>
+                                <td align="center" colspan="2">
+                                    <a href="index.html" class="btn">Home</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+                                    <a href="w1/w1.html" class="btn" title="Principles and Practices, Project Management ">Principles and Practices, Project Management. 1</a>
+                                </td>
+                                <td align="left">
+                                    <a href="w2/w2.html" class="btn" title="Computer-Aided Design">2. Computer-Aided Design</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+                                    <a href="w3/w3.html" class="btn" title="Computer-Controlled Cutting">Computer-Controlled Cutting. 3</a>
+                                </td>
+                                <td align="left">
+                                    <a href="w4/w4.html" class="btn" title="Electronics Production">4. Electronics Production</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+                                    <a href="w5/w5.html" class="btn" title="3D Scanning and Printing">3D Scanning and Printing. 5</a>
+                                </td>
+                                <td align="left">
+                                    <a href="w6/w6.html" class="btn" title="Electronics Design">6. Electronics Design</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+                                    <a href="w7/w7.html" class="btn" title="Computer-Controlled Machining">Computer-Controlled Machining. 7</a>
+                                </td>
+                                <td align="left">
+                                    <a href="w8/w8.html" class="btn" title="Embedded Programming">8. Embedded Programming</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+                                    <a href="w9/w9.html" class="btn" title="Mechanical Design">Mechanical Design. 9</a>
+                                </td>
+                                <td align="left">
+                                    <a href="w10/w10.html" class="btn" title="Machine Design">10. Machine Design</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+                                    <a href="w11/w11.html" class="btn" title="Input Devices">Input Devices. 11</a>
+                                </td>
+                                <td align="left">
+                                    <a href="w12/w12.html" class="btn" title="Moluding and Casting">12. Moulding and Casting</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+                                    <a href="w13/w13.html" class="btn" title="Output Devices">Output Devices. 13</a>
+                                </td>
+                                <td align="left">
+                                    <a href="w14/w14.html" class="btn" title="Composites">14. Composites</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+                                    <a href="w15/w15.html" class="btn" title="Networking and Communications">Networking and Communications. 15</a>
+                                </td>
+                                <td align="left">
+                                    <a href="w16/w16.html" class="btn" title="Interface and Application Programming">16. Interface and Application Programming</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+                                    <a href="w17/w17.html" class="btn" title="Applications and Implications">Applications and Implications. 17</a>
+                                </td>
+                                <td align="left">
+                                    <a href="w18/w18.html" class="btn" title="Invention, Intellectual Property, and Income">18. Invention, Intellectual Property, and Income</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" colspan="2">
+                                    <a href="project/project.html" class="btn" title="Final Project:- Sparky the EDM PCB Mill">19. Project Development .19</a>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--<div class="panel-footer"></div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <h2>Installing and setting up Arch linux in Thinpad Yoga 20C0</h2>
+    <section>
+        <p>
+            This site is my logs of my experiements towards a perfect Arch linux installation inside a 2014
+            <a href="https://support.lenovo.com/in/en/documents/pd030761">Lenovo Thinkpad Yoga 20C0</a>. I try to write my best describing the methods I adopted to tackle each of the challenges, solving the problems.
+        </p>
+        <h3>About system</h3>
+        <h4>Installation</h4>
+        <p>
+            cloning and setting up the <code>/etc/fstab</code>, grub, pacman mirrors, <code>fstrim</code>, remapping keyboard keys, kde keyboard shortcuts, auto-login and auto-lock
+            after login.
+        </p>
+
+        <p>
+
+        </p>
+
+        <h3>Fixing Bluetooth</h3>
+        <p>
+            Hardware is a Intel N-7260+BT Half Mini PCI card.
+        </p>
+        <p>
+            To begin with, I didn't even had the bluetooth adapters shown in KDE's bluetooth utility. So naturally I suspected that the device is turned off/disabled, but soon I found that it's
+            not the case, <code>rfkill list</code> lists the device. Then I though I don't have the necessary softwares or the required services may not be running.
+        </p>
+        <p>
+            Followed the arch wiki on
+            <a href="https://wiki.archlinux.org/index.php/bluetooth">bluetooth</a>. Installed <code>bluez</code> and <code>bluez-utils</code>. The <code>bluetoothctl</code> tool is available in the <code>bluez-utils</code>, it also has many
+            other <code>hci</code> utilities.
+        </p>
+        <p>
+            <code>hciconfig hci0 up</code> made the bluetooth adapter appear for KDE bluetooth device and also listed when the command <code>hcitool dev</code> executed.
+        </p>
+        <p>
+            I can now scan for devices using <code>hcitool scan</code> and the graphical tool in KDE.</p>
+        <p>
+            I also made sure that I'm part of the <code>lp</code> group.
+        </p>
+        <p>
+            But I still can't connect to any bluetooth device, they get listed under available devices, I can pair, I even found that I can browse the contents of my and`prid phone, send and receive
+            files between them. But they won't stay connected. I can't connect to my bluetooth speaker either.
+        </p>
+        <p>
+            Next attempt was the console utily described in the wiki, <code>bluetoothctl</code>, followed the guide. But the same results, will pair, will not connect.
+        </p>
+        <h5>
+            <a href="https://wiki.archlinux.org/index.php/Bluetooth_headset">Bluetooth_Headset Wiki</a>
+        </h5>
+        <p>
+            Since I was able to do something with my phone and nothing with my bkuetooth speaker, I started to fix that. started with the next Arch wiki page on
+            <a href="https://wiki.archlinux.org/index.php/Bluetooth_headset">Bluetooth_Headset Wiki</a>. Here I noticed that I need to install more stuff for getting the USB to work,
+            <pre>
+              pulseaudio-alsa
+              pulseaudio-bluetooth
+              bluez
+              bluez-libs
+              bluez-utils
+              bluez-firmware
+            </pre> The service bluetooth is then enabled and started <code>sudo systemctl enable bluetooth</code> and <code>sudo systemctl start bluetooth</code>.
+        </p>
+        <p>
+            Still I was unable to connect, but now there is progress. I was getting a different error with <code>systemctl status bluetooth</code> (sorry I forgot what was the original
+            error).
+            <pre>
+            Access denied: org.bluez.Error.Rejected
+          </pre> removing existing paired devices and restarting the bluetooth services gave a new error.
+            <pre>
+            a2dp-sink profile connect failed for xx:xx:xx:xx:xx:xx: Protocol not available
+          </pre>
+        </p>
+        <p>
+            Reading the wiki page further, I found the fix,
+            <pre>
+              sudo pactl load-module module-bluetooth-discover
+            </pre>
+            <b>Now I can play the music and keep the phone connected!!!!, I don't know what fixed it, but while trying to fix the bluetooth speaker, the issue of phone not getting connected
+                is also solved. I guess it was the missing firmwares.</b>
+        </p>
+        <p>
+            After reboot sometimes you may face an issue that the bluetooth speaker will get connected but no appropriate audio device will appear. With <code>systemctl status bluetooth</code>            I was getting the below.
+            <pre>
+              bluetoothd[882]: Bluetooth daemon 5.43
+              systemd[1]: Started Bluetooth service.
+              bluetoothd[882]: Starting SDP server
+              bluetoothd[882]: Bluetooth management interface 1.13 initialized
+              bluetoothd[882]: Failed to obtain handles for "Service Changed" characteristic
+              bluetoothd[882]: Sap driver initialization failed.
+              bluetoothd[882]: sap-server: Operation not permitted (1)
+              bluetoothd[882]: Endpoint registered: sender=:1.23 path=/MediaEndpoint/A2DPSource
+              bluetoothd[882]: Endpoint registered: sender=:1.23 path=/MediaEndpoint/A2DPSink
+              bluetoothd[882]: Unable to get Headset Voice gateway SDP record: Host is down
+            </pre> This can be fixed by <code>sudo pactl load-module module-bluetooth-discover</code> too.
+        </p>
+        <p>
+            The above process can be automated by adding the line to <code>/etc/pulse/default.pa</code>, but in my case it was already there, supposed to autoload on bluetooth audio
+            sink connection; weired,
+        </p>
+        <p>
+            The Arch wiki page has answers to all the questions!
+        </p>
+        <p>
+            <h5>for the multimedia buttons</h5>, the wiki suggested I make <code>/etc/modules-load.d/uinput.conf</code> with uniput entry in it. But <code>uinput</code> module was already
+            loaded anyway, so no need. And I confirmed that with the help of the console tool <code>xev</code> and I also confirmed the working with VLC. SMplayer etc.
+        </p>
+        <p>
+            <h4>to fix</h4>
+            <p>
+                <ul>
+                    <li>bluetooth speaker doesn't output audio the first time, need to reconnect</li>
+                    <li>no audio input (problem with my bluetooth-speaker?? as it doesn't work well with android phone too.)</li>
+                </ul>
+            </p>
+        </p>
+    </section>
+
+    <section>
+        <h3>Enabling Auto-Rotate, Palm Rejection on Wacom Stylus Detection, Disable Keyboard, Touchpad, and Trackpoint in Tablet Mode and Automatic Brighness Controll</h3>
+        <p>
+            Not so difficult as everything is achived with
+            <a href="https://github.com/admiralakber/thinkpad-yoga-scripts">thinkpad-yoga-scripts</a>. <code>yaourt -S thinkpad-yoga-scripts</code>. Minor tweaking is required to get it working. But a major troubleshooting was required to solve
+            the issue of the script messing up the 'suspend to ram', while the script/service is active the device will immediately wakes up from the sleep.
+        </p>
+    </section>
+</body>
+
+</html>
